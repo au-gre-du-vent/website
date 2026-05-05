@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Au Gré du Vent | Restaurant & Terrasse à l'Île de Ré</title>
+    <meta name="description"
+        content="Découvrez Au Gré du Vent à Saint-Clément-des-Baleines. Une table élégante face au Phare des Baleines, offrant une cuisine du marché et des spécialités locales telles que notre fameuse Parillada.">
+    <meta property="og:title" content="Au Gré du Vent | Île de Ré">
+    <meta property="og:description"
+        content="Une table authentique portée par les vents de l'Atlantique, face au Phare des Baleines à l'Île de Ré.">
+    <!-- Google Fonts pour un look premium -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <header id="header" class="header">
+        <div class="header-container">
+            <a href="#" class="brand" aria-label="Au Gré du Vent - Accueil">
+                <span class="brand-title">Au Gré du Vent</span>
+                <span class="brand-subtitle">Île de Ré</span>
+            </a>
+
+            <nav id="nav-desktop" class="nav-desktop" aria-label="Navigation principale">
+                <a href="#histoire">Notre Histoire</a>
+                <a href="#carte">La Carte</a>
+                <a href="#galerie">L'Ambiance</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:+33546529653" class="btn-primary btn-nav">
+                    Réserver
+                </a>
+                <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <button class="mobile-close" id="mobile-close" aria-label="Fermer le menu">✕</button>
+        <div class="mobile-content">
+            <nav aria-label="Navigation mobile">
+                <a href="#histoire" class="mobile-link">Notre Histoire</a>
+                <a href="#carte" class="mobile-link">La Carte</a>
+                <a href="#galerie" class="mobile-link">L'Ambiance</a>
+                <a href="#contact" class="mobile-link">Contact</a>
+            </nav>
+            <div class="mobile-footer">
+                <a href="tel:+33546529653" class="mobile-phone">05 46 52 96 53</a>
+                <p>40 Chemin du Pas du Nord<br>17590 Saint-Clément-des-Baleines</p>
+                <a href="tel:+33546529653" class="btn-primary mt-4">Réserver une table</a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+
+        <!-- ===== HERO ===== -->
+        <section class="hero">
+            <div class="hero-bg reveal-scale">
+                <!-- Fallback background just in case, image from user's assets -->
+                <div class="hero-img" style="background-image: url('assets/hero.jpg')"></div>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <span class="hero-surtitle reveal-up">Spécialités de la Mer & Embruns</span>
+                <h1 class="hero-title reveal-up delay-1">L'Océan Authentique</h1>
+                <p class="hero-subtitle reveal-up delay-2">Laissez-vous porter, face au majestueux Phare des Baleines
+                </p>
+                <div class="hero-btn-group reveal-up delay-3">
+                    <a href="#carte" class="btn-primary">Découvrir le menu</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="scroll-line"></span>
+            </div>
+        </section>
+
+        <!-- ===== HISTOIRE / PHILOSOPHIE ===== -->
+        <section class="story" id="histoire">
+            <div class="container container-split">
+                <div class="story-text">
+                    <span class="section-surtitle reveal-up">L'Esprit de la Maison</span>
+                    <h2 class="section-title reveal-up">Une cuisine animée par les vents de l'Île</h2>
+                    <p class="reveal-up">Au bout du monde rétais, là où les vagues rythment le temps, le restaurant Au
+                        Gré du Vent vous propose une cuisine traditionnelle et authentique, généreuse et soignée. Notre
+                        chef met à l'honneur les produits de la mer pêchés localement, ainsi que les inspirations du
+                        marché rétais.</p>
+                    <p class="reveal-up">Prenez place sur notre magnifique terrasse abritée pour une dégustation au
+                        grand air, ou profitez du confort de notre salle élégante. Que vous veniez partager une
+                        majestueuse Parillada ou notre renommée Mouclade, l'expérience se veut intime et inoubliable.
+                    </p>
+                    <div class="signature reveal-up">L'Équipe Au Gré du Vent</div>
+                </div>
+                <div class="story-image reveal-up">
+                    <img src="assets/terrace.png" alt="La terrasse du restaurant" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== LA CARTE ===== -->
+        <section class="menu-section" id="carte">
+            <div class="container">
+                <div class="menu-header text-center">
+                    <span class="section-surtitle reveal-up">Notre Menu</span>
+                    <h2 class="section-title reveal-up">Produits Locaux & Tradition</h2>
+                    <p class="section-desc reveal-up">La fraîcheur garantie, par notre Chef qui sublime les arrivages de
+                        nos côtes charentaises.</p>
+                </div>
+
+                <div class="menu-tabs reveal-up">
+                    <button class="tab active" data-tab="entrees">Entrées</button>
+                    <button class="tab" data-tab="plats">Plats</button>
+                    <button class="tab" data-tab="desserts">Desserts</button>
+                </div>
+
+                <div class="menu-content">
+                    <!-- ENTRÉES -->
+                    <div class="menu-panel active" id="entrees">
+                        <div class="menu-grid">
+                            <div class="menu-item reveal-up">
+                                <div class="menu-item-header">
+                                    <h3 class="menu-item-title">Huîtres de l'Île de Ré</h3>
+                                    <span class="menu-item-price">selon calibre</span>
+                                </div>
+                                <p class="menu-item-desc">Dégustation locale garantie, servies délicatement préparées.
+                                </p>
+                            </div>
+                            <div class="menu-item reveal-up">
+                                <div class="menu-item-header">
+                                    <h3 class="menu-item-title">Assiette de Tapas de la Mer</h3>
+                                    <span class="menu-item-price">14€</span>
+                                </div>
+                                <p class="menu-item-desc">Mélange de petits coquillages et rillettes de poissons locaux.
+                                </p>
+                            </div>
+                            <div class="menu-item reveal-up">
+                                <div class="menu-item-header">
+                                    <h3 class="menu-item-title">Camembert Rôti</h3>
+                                    <span class="menu-item-price">12€</span>
+                                </div>
+                                <p class="menu-item-desc">Idéal à partager, accompagné de croûtons à l'ail
+                                    croustillants.</p>
+                            </div>
+                            <div class="menu-item reveal-up">
+                                <div class="menu-item-header">
+                                    <h3 class="menu-item-title">Fines Tranches Marines</h3>
+                                    <span class="menu-item-price">16€</span>
+                                </div>
+                                <p class="menu-item-desc">Carpaccio léger, assaisonnement à l'huile d'olive et jus
+                                    d'agrumes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PLATS -->
+                    <div class="menu-panel" id="plats">
+                        <div class="menu-grid">
+                            <div class="menu-item reveal-up">
+                                <div class="menu-item-header">
+                                    <h3 class="menu-item-title">La Fameuse Parillada</h3>
+                                    <span class="menu-item-price">28€</span>
+                                </div>
+                                <p class="menu-item-desc">Assortiment majestueux de poissons frais, crustacés saisis à
+                                    la plancha, pommes grenailles.</p>
+                            </div>
+                            <div class="menu-item reveal-up">
+                                <div class="menu-item-header">
+                                    <h3 class="menu-item-title">Mouclade Rétaise</h3>
+                                    <span class="menu-item-price">18€</span>
+                                </div>
+                                <p class="menu-item-desc">Recette traditionnelle locale à base de crème, safran et
+                                    pineau charentais.</p>
+                            </div>
+                            <div class="menu-item reveal-up">
+                                <div class="menu-item-header">
+                                    <h3 class="menu-item-title">Couscous Royal (Selon Semaine)</h3>
+                                    <span class="menu-item-price">22€</span>
+                                </div>
+                                <p class="menu-item-desc">Tradition orientale savoureuse, viandes variées et semoule
+                                    fondante.</p>
+                            </div>
+                            <div class="menu-item reveal-up">
+                                <div class="menu-item-header">
+                                    <h3 class="menu-item-title">L'Aile de Raie Royale</h3>
+                                    <span class="menu-item-price">24€</span>
+                                </div>
+                                <p class="menu-item-desc">Cuite au beurre noisette et câpres, garniture de petits
+                                    légumes.</p>
+                            </div>
+                            <div class="menu-item reveal-up">
+                                <div class="menu-item-header">
+                                    <h3 class="menu-item-title">Burger de Thon Frais</h3>
+                                    <span class="menu-item-price">19€</span>
+                                </div>
+                                <p class="menu-item-desc">Steak de thon mi-cuit, sauce tartare maison, frites
+                                    croustillantes.</p>
+                            </div>
+                            <div class="menu-item reveal-up">
+                                <div class="menu-item-header">
+                                    <h3 class="menu-item-title">Moules Frites Classiques</h3>
+                                    <span class="menu-item-price">16€</span>
+                                </div>
+                                <p class="menu-item-desc">Moules marinières simples et frites généreuses.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DESSERTS -->
+                    <div class="menu-panel" id="desserts">
+                        <div class="menu-grid">
+                            <div class="menu-item reveal-up">
+                                <div class="menu-item-header">
+                                    <h3 class="menu-item-title">Crème Caramel au Beurre</h3>
+                                    <span class="menu-item-price">8€</span>
+                                </div>
+                                <p class="menu-item-desc">Le dessert classique et régressif qu'on ne présente plus.</p>
+                            </div>
+                            <div class="menu-item reveal-up">
+                                <div class="menu-item-header">
+                                    <h3 class="menu-item-title">Le Parfait Glacé</h3>
+                                    <span class="menu-item-price">10€</span>
+                                </div>
+                                <p class="menu-item-desc">Léger, aérien, accompagné d'un coulis fruité de saison.</p>
+                            </div>
+                            <div class="menu-item reveal-up">
+                                <div class="menu-item-header">
+                                    <h3 class="menu-item-title">Assiette de Fromages Affinés</h3>
+                                    <span class="menu-item-price">12€</span>
+                                </div>
+                                <p class="menu-item-desc">Sélection de notre fromager, noix sèches et verdure.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-notice text-center reveal-up">
+                    <p><em>*Notre menu évolue quotidiennement selon l'arrivage de la mer et les produits du marché.</em>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BANNIÈRE IMAGE (galerie vibe) ===== -->
+        <section class="banner" id="galerie">
+            <div class="banner-img" style="background-image: url('assets/huitre.jpg');"></div>
+            <div class="banner-content text-center">
+                <h2 class="reveal-up"
+                    style="color: white; font-family: var(--font-heading); font-size: 2.5rem; margin-bottom: 20px;">
+                    Prenez le Temps</h2>
+                <a href="#contact" class="btn-outline-white reveal-up">Nous Trouver</a>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT & INFOS ===== -->
+        <section class="contact" id="contact">
+            <div class="container container-split">
+                <div class="contact-info">
+                    <span class="section-surtitle reveal-up">Informations Pratiques</span>
+                    <h2 class="section-title reveal-up">Votre Escale</h2>
+
+                    <div class="info-block reveal-up">
+                        <h3 class="info-title">Adresse</h3>
+                        <p class="info-data">40 Chemin du Pas du Nord<br>17590 Saint-Clément-des-Baleines<br>Île de Ré
+                        </p>
+                    </div>
+
+                    <div class="info-block reveal-up">
+                        <h3 class="info-title">Horaires Habituels</h3>
+                        <p class="info-data">Déjeuner : 12h00 – 14h00<br>Dîner : 19h00 – 21h30</p>
+                        <p class="info-data" style="margin-top: 5px; font-size: 0.9rem; color: var(--text-muted);">Il
+                            est conseillé d'appeler pour vérifier nos jours précis de fermeture ou réserver.</p>
+                    </div>
+
+                    <div class="info-block reveal-up">
+                        <h3 class="info-title">Pour nous contacter</h3>
+                        <a href="tel:+33546529653" class="info-link">05 46 52 96 53</a>
+                    </div>
+                </div>
+
+                <div class="contact-image reveal-up">
+                    <img src="assets/end.jpg" alt="Vue des alentours" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">Au Gré du Vent</div>
+                <p>Cuisine de la mer authentique, depuis le merveilleux Phare des Baleines, Île de Ré.</p>
+            </div>
+
+            <div class="footer-links-group">
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <a href="#histoire">L'Histoire</a>
+                    <a href="#carte">La Carte</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Suivez-nous</h4>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a
+                        href="https://www.tripadvisor.fr/Restaurant_Review-g1138240-d7904321-Reviews-Au_Gre_du_Vent-Saint_Clement_des_Baleines_Ile_de_Re_Charente_Maritime_Nouvelle_.html">TripAdvisor</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Au Gré du Vent. Tous droits réservés.</p>
+            <div class="legal-links">
+                <a href="#">Mentions Légales</a>
+                <a href="#">Conditions Générales</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script inclus -->
+    <script src="script.js"></script>
+</body>
+
+</html>
